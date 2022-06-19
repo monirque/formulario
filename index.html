@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand">
+        </a>
+     <img src="assets/img/rcz.png" ></span>
+             
+            
+        </div>
+    </nav> 
+
+   <!--Contato-->
+  </div>  
+  <form>    
+    
+        <div class="campo">
+            <label for="Name">Name:</label>
+            <input type="text" name="Name" id="name" required>
+        </div>
+    
+    <div class="campo">
+        <label for="Email">Email:</label>
+        <input type="email" name="email" id="email" required>
+    </div>
+    
+    <div class="campo">
+        <label for="telephone">Telephone:</label>
+        <input type="text" name="Telephone" id="Telephone" required>
+    </div>
+    <div class="campo">
+        <label for="company">Company:</label>
+        <input type="text" name="Company" id="Company">
+    </div>
+  </form>
+  <!--Itens-->
+  <div class="title">
+  <h2> 
+    Fill in your company information:</h2>
+</div>
+  <form>
+    <div class="campo">
+<label>Number of virtual machines:</label>
+<input type="number" name="VM" id="VM">
+</div>
+<div class="campo">
+<label> Number of physical machines:</label>
+<input type="number" name="PM" id="PM">
+</div>
+<div class="campo">
+    <label>Number of Microsoft 365 seats:</label>
+    <input type="number" name="M365" id="M365">
+</div>
+<div class="campo">
+    <label>Number of Google Workspace seats:</label>
+    <input type="number" name="GW" id="GW">
+</div>
+  </form>
+<!--Tamanho do armazenamento-->
+<form>
+    <div class="campo">
+    <label>Total backup size in gigabytes (numbers only)</label>
+    <input type="number" name="BKP" id="BKP"> 
+</div>
+</form>
+<!--Tipo do armazenamento-->
+<div class="title">
+<h2>Storage type:</h2>
+</div>
+
+<form>
+    <div class="options">
+        <label>Local</label> <br>
+    <select id="local"> <br>
+        <option selected disable value="">Select</option>
+        <option>Veeam Backup Local Storage</option>
+        <option>Acronis Backup Local Storage</option>
+    </select>    
+    </div> <br>
+    <div class="options">
+        <label>Cloud</label> <br>
+    <select id="Cloud"> <br>
+        <option selected disable value="">Select</option>
+        <option>Veeam Backup Cloud Storage</option>
+        <option>Acronis Backup Cloud Storage</option>
+    </select>    
+    </div>
+</form>
+
+<button class="button" type="submit">Submit</button>
+
+</body>
+</html>
