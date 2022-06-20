@@ -6,97 +6,247 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <div>
+ 
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand">
+            <img src="assets/img/rcz.png" >
         </a>
-     <img src="assets/img/rcz.png" ></span>
-             
-            
+        
+        <div class="div-title-site">
+             <span class="title-site"> Backup Budget             </span>
         </div>
+            
+      
     </nav> 
 
    <!--Contato-->
-  </div>  
-  <form>    
+ 
+     
+  <div class=" div-screen div-form-identity">
+        <div class="title-screen title-screen-identity">
+            <h2>Step 1 of 4 - Fill your personal informations </h2>
+        </div> 
+        
+        <form id="form-identity">    
+            <div class="side-1">
+                <div class="campo">
+                    <label for="Name">Name:</label>
+                    <input type="text" name="Name" id="name" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="Email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="telephone">Telephone:</label>
+                    <input type="text" name="Telephone" id="Telephone" required>
+                </div>
+                <div class="campo">
+                    <label for="company">Company:</label>
+                    <input type="text" name="Company" id="Company">
+                </div>
+            </div>
+            <div class="side-2">
+               
+               
+                <button type="submit" class="button"> Advance </button>
+
+            </div>
     
-        <div class="campo">
-            <label for="Name">Name:</label>
-            <input type="text" name="Name" id="name" required>
+            
+        </form>
+    </div> 
+
+    <!--Itens-->
+    
+  
+    <div class="div-screen-temp div-form-items">
+            <div class="title-screen title-screen-items">
+                <h2>Step 2 of 4 - Your Machines </h2>
+            </div> 
+      
+            <form id="form-items">
+                <div class="side-1">
+                    <div class="campo">
+                        <label>Number of virtual machines:</label>
+                        <input type="number" name="VM" id="VM">
+                    </div>
+                    <div class="campo">
+                        <label> Number of physical machines:</label>
+                        <input type="number" name="PM" id="PM">
+                    </div>
+                    <div class="campo">
+                        <label>Number of Microsoft 365 seats:</label>
+                        <input type="number" name="M365" id="M365">
+                    </div>
+                    <div class="campo">
+                        <label>Number of Google Workspace seats:</label>
+                        <input type="number" name="GW" id="GW">
+                    </div>
+                </div>
+                <div class="side-2">
+                    <button type="submit" class="button"> Advance </button>
+                </div>
+            </form>
+    </div>
+    
+    <!--Tamanho do armazenamento-->
+  
+    <div class="div-screen-temp div-screen-bkp-size">
+        <div class="title-screen  title-screen-size-bkp">
+            <h2>Step 3 of 4 - Total backup size of your ambient </h2>
+        </div> 
+        <form>
+            <div class="side-1">
+                <div class="campo">
+                    <label>Total backup size in gigabytes (numbers only)</label>
+                    <input type="number" name="BKP" id="BKP"> 
+                </div>
+            </div>
+            <div class="side-2">
+                <button class="button" type="submit"> Advance</button>
+            </div>
+        </div>
+        </form>
+    </div>
+
+    <!--Tipo do armazenamento-->
+   
+    <div class=" div-screen-temp div-screen-type-type-bkp">
+            <div class="title-screen title-screen-type-bkp">
+                <h2>Step 3 of 4 - Kind of backup do you budget  </h2>
+            </div>
+        
+            <form id="type-bkp">
+                <div class="side-1-type-bkp">
+                    <div class="options"> 
+                        <label for="">Select the type of backup</label><br>
+                        <select id=""> <br>
+                            <option> Local</option>
+                        </select> 
+                    </div>
+                    <div class="options">
+                        <label>Product</label> <br>
+                        <select id="local"> <br>
+                            <option selected disable value="">Select</option>
+                            <option>Veeam Backup Local Storage</option>
+                            <option>Acronis Backup Local Storage</option>
+                        </select>    
+                    </div> 
+                    
+                </div>
+                <div class="side-2-type-bkp">
+                    <div class="div-product">
+                        <div class="title-product">
+                            <h3>Veeam Backup Local Storage</h3>
+                        </div>
+                        <img class="logo-management" src="/assets/img/server.png" alt="">
+                        <h4>On Premise Management </h4>
+                        <div class="description-product">
+                            <p>Veeam Needs an Local Server..</p> 
+                        </div>
+                    
+                    
+                    </div>
+                        
+         
+                    <div class="div-product">
+                        <div class="title-product">
+                            <h3>Acronis Backup Local Storage</h3>
+                        </div>
+                        <img class="logo-management" src="/assets/img/cloud.png" alt="">
+                        <h4> Cloud Backup Management</h4>
+                        <div class="description-product">   
+                           
+                            <p>
+                                acronis lets you manage your backup from anywhere in the world, just by having a computer with internet access
+                            </p>
+                    
+                        </div>
+                    </div>
+                
+                </div> 
+            </form>
+            <div class="finish">
+                <button class="button" > Finish Budget</button>
+            </div>
+                
+            
+    </div>
+
+    <div class=" div-screen-temp div-screen-type-type-bkp">
+        <div class="title-screen title-screen-type-bkp">
+            <h2>Step 3 of 4 - Kind of backup do you budget  </h2>
         </div>
     
-    <div class="campo">
-        <label for="Email">Email:</label>
-        <input type="email" name="email" id="email" required>
-    </div>
-    
-    <div class="campo">
-        <label for="telephone">Telephone:</label>
-        <input type="text" name="Telephone" id="Telephone" required>
-    </div>
-    <div class="campo">
-        <label for="company">Company:</label>
-        <input type="text" name="Company" id="Company">
-    </div>
-  </form>
-  <!--Itens-->
-  <div class="title">
-  <h2> 
-    Fill in your company information:</h2>
-</div>
-  <form>
-    <div class="campo">
-<label>Number of virtual machines:</label>
-<input type="number" name="VM" id="VM">
-</div>
-<div class="campo">
-<label> Number of physical machines:</label>
-<input type="number" name="PM" id="PM">
-</div>
-<div class="campo">
-    <label>Number of Microsoft 365 seats:</label>
-    <input type="number" name="M365" id="M365">
-</div>
-<div class="campo">
-    <label>Number of Google Workspace seats:</label>
-    <input type="number" name="GW" id="GW">
-</div>
-  </form>
-<!--Tamanho do armazenamento-->
-<form>
-    <div class="campo">
-    <label>Total backup size in gigabytes (numbers only)</label>
-    <input type="number" name="BKP" id="BKP"> 
-</div>
-</form>
-<!--Tipo do armazenamento-->
-<div class="title">
-<h2>Storage type:</h2>
+        <form id="type-bkp">
+            <div class="side-1-type-bkp">
+                <div class="options"> 
+                    <label for="">Select the type of backup</label><br>
+                    <select id=""> <br>
+
+                        <option>Cloud</option>
+        
+                    </select> 
+                </div>
+                <div class="options">
+                    <label>Product</label> <br>
+                <select id="Cloud"> <br>
+                    <option selected disable value="">Select</option>
+                    <option>Veeam Backup Cloud Storage</option>
+                    <option>Acronis Backup Cloud Storage</option>
+                </select>    
+                </div>
+            </div>
+            <div class="side-2-type-bkp">
+                <div class="div-product">
+                    <div class="title-product">
+                        <h3>Veeam Backup Cloud Storage</h3>
+                    </div>
+                    <img class="logo-management" src="/assets/img/server.png" alt="">
+                    <h4>On Premise Management </h4>
+                    <div class="description-product">
+                        <p>Veeam Needs an Local Server..</p> 
+                    </div>
+                 
+                </div>
+                <div class="div-product">
+                    <div class="title-product">
+                        <h3>Acronis Backup Cloud Storage</h3>
+                    </div>
+                    <img class="logo-management" src="/assets/img/cloud.png" alt="">
+                    <h4> Cloud Backup Management</h4>
+                    <div class="description-product">   
+                       
+                        <p>
+                            acronis lets you manage your backup from anywhere in the world, just by having a computer with internet access
+                        </p>
+                
+                    </div>
+                      
+                </div>
+            
+            </div><br>
+
+            
+        </form>
+        <div class="finish">
+            <button class="button" > Finish Budget</button>
+        </div>
+            
+        
 </div>
 
-<form>
-    <div class="options">
-        <label>Local</label> <br>
-    <select id="local"> <br>
-        <option selected disable value="">Select</option>
-        <option>Veeam Backup Local Storage</option>
-        <option>Acronis Backup Local Storage</option>
-    </select>    
-    </div> <br>
-    <div class="options">
-        <label>Cloud</label> <br>
-    <select id="Cloud"> <br>
-        <option selected disable value="">Select</option>
-        <option>Veeam Backup Cloud Storage</option>
-        <option>Acronis Backup Cloud Storage</option>
-    </select>    
-    </div>
-</form>
 
-<button class="button" type="submit">Submit</button>
 
+    <script src="https://kit.fontawesome.com/5064b0e9f5.js" crossorigin="anonymous"></script>
 </body>
 </html>
